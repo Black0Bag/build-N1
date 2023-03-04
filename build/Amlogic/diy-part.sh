@@ -61,7 +61,7 @@ export Cancel_running="1"                    # 取消路由器每天跑分任务
 # 可选内核 （5.4.xx） （5.10.xx） （5.15.xx） （6.0.xx）
 
 export amlogic_model="s905d"
-export amlogic_kernel="6.1"
+export amlogic_kernel="5.15"
 export auto_kernel="true"
 export rootfs_size="960"
 
@@ -74,7 +74,6 @@ sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' `egrep "Turbo ACC 网络加
 sed -i 's/"实时流量监测"/"流量"/g' `egrep "实时流量监测" -rl ./`
 sed -i 's/"KMS 服务器"/"KMS激活"/g' `egrep "KMS 服务器" -rl ./`
 sed -i 's/"TTYD 终端"/"命令窗"/g' `egrep "TTYD 终端" -rl ./`
-sed -i 's/"USB 打印服务器"/"打印服务"/g' `egrep "USB 打印服务器" -rl ./`
 sed -i 's/"Web 管理"/"Web管理"/g' `egrep "Web 管理" -rl ./`
 sed -i 's/"管理权"/"改密码"/g' `egrep "管理权" -rl ./`
 sed -i 's/"带宽监控"/"监控"/g' `egrep "带宽监控" -rl ./`
