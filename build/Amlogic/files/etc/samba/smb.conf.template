@@ -1,0 +1,14 @@
+[global]
+   workgroup = WORKGROUP
+   server string = N1
+   security = user
+   map to guest = Bad User
+   guest account = root
+
+[N1]
+   comment = N1
+   path = /mnt/sda1
+   guest ok = yes
+   browseable = yes
+   writable = yes
+######### Dynamic written config options #########

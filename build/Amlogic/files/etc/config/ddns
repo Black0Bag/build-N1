@@ -1,0 +1,17 @@
+
+config ddns 'global'
+	option ddns_dateformat '%F %R'
+	option ddns_loglines '250'
+	option upd_privateip '0'
+
+config service 'myddns_ipv6'
+	option use_ipv6 '1'
+	option service_name 'dynv6.com'
+	option lookup_host 'ipv6.dynv6.com'
+	option domain 'blackbag.dynv6.net'
+	option password 'dxBUK9SyANcDvNfyeahU9TW4XW4wJ5'
+	option enabled '1'
+	option interface 'wan'
+	option ip_source 'web'
+	option force_interval '24'
+
